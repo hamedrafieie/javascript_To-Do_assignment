@@ -1,0 +1,207 @@
+/* ------------ youtube.com/CodeExplained ------------ */
+body {
+  --background: #161722;
+  --todo: #25273c;
+  --border: hsl(237, 14%, 26%);
+  --text: hsl(234, 39%, 85%);
+  --chektest: hsl(233, 14%, 35%);
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: var(--background);
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ------------ container ------------ */
+.container {
+  margin-top: 30px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: var(--todo);
+  box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+}
+
+/* ------------ header ------------ */
+.header {
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-height: 350px;
+  z-index: -1;
+  background-image: url(../img/bg-desktop-dark.jpg);
+  height: 350px;
+}
+.clear {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.clear i {
+  font-size: 30px;
+  color: #fff;
+}
+.clear i:hover {
+  cursor: pointer;
+  text-shadow: 1px 3px 5px #000;
+  transform: rotate(45deg);
+}
+#date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 25px;
+  font-family: 'Titillium Web', sans-serif;
+}
+.wrapper {
+  width: 100%;
+  max-width: 700px;
+  margin: 0px 30px;
+  margin-top: 100px;
+}
+.title {
+  color: white;
+  letter-spacing: 10px;
+  font-size: 50px;
+  font-weight: bold;
+}
+/* ------------ content ------------ */
+.content {
+  margin-top: 70px;
+  box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 700px;
+  height: 350px;
+  max-height: 350px;
+  background-color: #fff;
+  overflow: auto;
+}
+.content::-webkit-scrollbar {
+  display: none;
+}
+.content ul {
+  padding: 0;
+  margin: 0;
+}
+.item {
+  width: 100%;
+  height: 60px;
+  min-height: 45px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.item i.co {
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+}
+.item i.co:hover {
+  cursor: pointer;
+}
+.fa-check-circle {
+  color: #6eb200;
+}
+.item p.text {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  background-color: #fff;
+  max-width: 285px;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+  color: #ccc;
+}
+.item i.de {
+  display: none;
+  position: absolute;
+  font-size: 25px;
+  right: 15px;
+  top: 10px;
+}
+.item i.de:hover {
+  color: #af0000;
+  cursor: pointer;
+}
+/* ------------ add item ------------ */
+.add-to-do {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  margin-top: 50px;
+  border-radius: 6px;
+}
+.add-to-do i {
+  position: absolute;
+  font-size: 40px;
+  color: #4162f6;
+}
+
+.add-to-do input {
+  width: 100%;
+  padding: 10px 0px;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.add-to-do input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #4162f6;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+}
+.add-to-do input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #4162f6;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+}
+.add-to-do input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #4162f6;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+}
+.add-to-do input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #4162f6;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+}
+
+.check {
+  flex-basis: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  transition: all 0.25s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
