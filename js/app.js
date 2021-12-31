@@ -54,7 +54,7 @@ function addToDo(toDo, id, done ){
     const LINE = done ? LINE_THROUGH : "";
     
     const item = `  <div class="item">
-                    <div class="fa ${DONE} co" job="complete" id="${id}"></div>
+                    <div class="fa ${DONE}  fa-2x" job="complete" id="${id}"></div>
                     <div><p class="text ${LINE}">${toDo}</p>  </div>                   
                   </div>
                 `;

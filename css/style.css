@@ -1,4 +1,3 @@
-/* ------------ youtube.com/CodeExplained ------------ */
 body {
  /* --background: #161722;*/
   --todo: #25273c;
@@ -6,7 +5,7 @@ body {
   --text: hsl(234, 39%, 85%);
   --chektest: hsl(233, 14%, 35%);
   font-family: 'Josefin Sans', sans-serif;
-  background-color: var(--background);
+  /*background-color: var(--background);*/
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -93,17 +92,17 @@ body {
   margin: 0;
 }
 .item {
-  width: 100%;
-  height: 60px;
+  height: 70px;
   min-height: 45px;
   position: relative;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   list-style: none;
-  padding-left: 10px;
+  padding-left: 25px;
   margin: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
+
 }
 .item i.co {
   align-items: center;
@@ -114,7 +113,13 @@ body {
   cursor: pointer;
 }
 .fa-check-circle  {
-  color: #76B3FB;
+  /*color: #76B3FB;*/
+  background: -webkit-gradient(linear, left top, left bottom, from(#55DDFF), to(#C058F3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+
 }
 .item p.text {
   margin-left: 1.5rem;
@@ -166,25 +171,25 @@ body {
 .add-to-do input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #25273c;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
 }
 .add-to-do input::-moz-placeholder {
   /* Firefox 19+ */
   color: #25273c;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
 }
 .add-to-do input:-ms-input-placeholder {
   /* IE 10+ */
   color: #25273c;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
 }
 .add-to-do input:-moz-placeholder {
   /* Firefox 18- */
   color: #25273c;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
 }
 
@@ -204,4 +209,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.theme{
+  float: right;
+  width: fit-content;
+}
+.theme img{
+  cursor: pointer;
 }
