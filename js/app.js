@@ -48,10 +48,8 @@ dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 
 // add to do function
 
-function addToDo(toDo, id, done, trash){
-    
-    if(trash){ return; }
-    
+function addToDo(toDo, id, done ){
+
     const DONE = done ? CHECK : UNCHECK;
     const LINE = done ? LINE_THROUGH : "";
     

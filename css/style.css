@@ -1,6 +1,6 @@
 /* ------------ youtube.com/CodeExplained ------------ */
 body {
-  --background: #161722;
+ /* --background: #161722;*/
   --todo: #25273c;
   --border: hsl(237, 14%, 26%);
   --text: hsl(234, 39%, 85%);
@@ -31,7 +31,7 @@ body {
   right: 0;
   max-height: 350px;
   z-index: -1;
-  background-image: url(../img/bg-desktop-dark.jpg);
+  background-image: url(../img/lightmode.jpg);
   height: 350px;
 }
 .clear {
@@ -52,7 +52,7 @@ body {
 }
 #date {
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   left: 10px;
   color: #fff;
   font-size: 25px;
@@ -99,7 +99,7 @@ body {
   position: relative;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   list-style: none;
-  padding: 0;
+  padding-left: 10px;
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -113,13 +113,13 @@ body {
 .item i.co:hover {
   cursor: pointer;
 }
-.fa-check-circle {
-  color: #6eb200;
+.fa-check-circle  {
+  color: #76B3FB;
 }
 .item p.text {
+  margin-left: 1.5rem;
   display: flex;
   padding: 0;
-  margin: 0;
   font-size: 20px;
   background-color: #fff;
   max-width: 285px;
@@ -152,7 +152,7 @@ body {
 .add-to-do i {
   position: absolute;
   font-size: 40px;
-  color: #4162f6;
+  color: #25273c;
 }
 
 .add-to-do input {
@@ -165,25 +165,25 @@ body {
 }
 .add-to-do input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #4162f6;
+  color: #25273c;
   font-family: 'Titillium Web', sans-serif;
   font-size: 20px;
 }
 .add-to-do input::-moz-placeholder {
   /* Firefox 19+ */
-  color: #4162f6;
+  color: #25273c;
   font-family: 'Titillium Web', sans-serif;
   font-size: 20px;
 }
 .add-to-do input:-ms-input-placeholder {
   /* IE 10+ */
-  color: #4162f6;
+  color: #25273c;
   font-family: 'Titillium Web', sans-serif;
   font-size: 20px;
 }
 .add-to-do input:-moz-placeholder {
   /* Firefox 18- */
-  color: #4162f6;
+  color: #25273c;
   font-family: 'Titillium Web', sans-serif;
   font-size: 20px;
 }
